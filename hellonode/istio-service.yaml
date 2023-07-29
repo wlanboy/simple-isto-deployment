@@ -8,7 +8,7 @@ spec:
   hosts:
   - "demo.com"
   gateways:
-  - demo-gateway
+  - test-gateway
   http:
   - match:
     - uri:
