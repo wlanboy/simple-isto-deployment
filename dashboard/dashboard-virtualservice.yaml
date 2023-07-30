@@ -7,12 +7,14 @@ metadata:
 spec:
   hosts:
   - "dashboard.demo.com"
+  - "dashboard.nuc.com"
   gateways:
   - dashboard-gateway
   tls:
   - match:
     - sniHosts:
       - dashboard.demo.com
+      - dashboard.nuc.com
     route:
     - destination:
         host: kubernetes-dashboard.kubernetes-dashboard.svc.cluster.local

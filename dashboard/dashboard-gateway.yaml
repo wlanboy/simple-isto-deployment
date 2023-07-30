@@ -16,3 +16,4 @@ spec:
       mode: PASSTHROUGH
     hosts:
     - "dashboard.demo.com"
+    - "dashboard.nuc.com"
