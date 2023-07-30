@@ -11,8 +11,10 @@ spec:
   - dashboard-gateway
   tls:
   - match:
-    - sniHosts: ["dashboard.demo.com"]
-  - route:
+    - port: 443
+      sniHosts:
+      - dashboard.demo.com
+    route:
     - destination:
         host: kubernetes-dashboard.kubernetes-dashboard.svc.cluster.local
         port:
