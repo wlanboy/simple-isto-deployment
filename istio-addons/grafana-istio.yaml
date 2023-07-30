@@ -13,6 +13,7 @@ spec:
       protocol: HTTP
     hosts:
     - "grafana.demo.com"
+    - "grafana.nuc.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -22,6 +23,7 @@ metadata:
 spec:
   hosts:
   - "grafana.demo.com"
+  - "grafana.nuc.com"
   gateways:
   - grafana-gateway
   http:

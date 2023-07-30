@@ -13,6 +13,7 @@ spec:
       protocol: HTTP
     hosts:
     - "kiali.demo.com"
+    - "kiali.nuc.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -22,6 +23,7 @@ metadata:
 spec:
   hosts:
   - "kiali.demo.com"
+  - "kiali.nuc.com"
   gateways:
   - kiali-gateway
   http:

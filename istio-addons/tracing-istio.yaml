@@ -13,6 +13,7 @@ spec:
       protocol: HTTP
     hosts:
     - "tracing.demo.com"
+    - "tracing.nuc.com"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -22,6 +23,7 @@ metadata:
 spec:
   hosts:
   - "tracing.demo.com"
+  - "tracing.nuc.com"
   gateways:
   - tracing-gateway
   http:
