@@ -12,9 +12,10 @@ spec:
   tls:
   - match:
     - port: 443
-      sniHosts: ["dashboard.example.com"]
-  -route:
-   - destination:
-      host: kubernetes-dashboard.kubernetes-dashboard.svc.cluster.local
-      port:
-        number: 443
+      sniHosts:
+      - dashboard.demo.com
+    route:
+    - destination:
+        host: kubernetes-dashboard.kubernetes-dashboard.svc.cluster.local
+        port:
+          number: 443
