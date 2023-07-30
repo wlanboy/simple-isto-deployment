@@ -6,7 +6,8 @@ metadata:
   namespace: test
 spec:
   hosts:
-  - "demo.com"
+  - "test.demo.com"
+  - "test.nuc.com"
   gateways:
   - test-gateway
   http:

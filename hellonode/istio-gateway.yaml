@@ -13,4 +13,5 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "demo.com"
+    - "test.demo.com"
+    - "test.nuc.com"
