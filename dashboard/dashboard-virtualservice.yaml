@@ -11,8 +11,7 @@ spec:
   - dashboard-gateway
   tls:
   - match:
-    - port: 443
-      sniHosts:
+    - sniHosts:
       - dashboard.demo.com
     route:
     - destination:
